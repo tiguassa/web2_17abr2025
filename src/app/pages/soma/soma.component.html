@@ -1,0 +1,10 @@
+<p>soma works!</p>
+
+<form>
+    Número 1 : <input type="text" /><br/>
+    Número 2 : <input type="text" /><br/>
+    <input type="button" value="Somar"
+        (click)="somarBotao(numero1.value, numero2.value)" /><br/><br/>
+
+    Resultado: <input type="text" [value]="resultado" readonly/>
+</form>
