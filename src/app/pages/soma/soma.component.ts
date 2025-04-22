@@ -1,13 +1,19 @@
 import { Component } from '@angular/core';
-import { SomaService } from '../../services'; // Aqui eu suponho que o serviço já esteja certo
-import { NumberSymbol } from '@angular/common'; // Parece não ser usado, podemos remover depois se quiser
+<<<<<<< HEAD
+import { SomaService } from '../../services'; 
+import { NumberSymbol } from '@angular/common';
+
+
+
+
 
 @Component({
   selector: 'app-soma',
   standalone: true,
   imports: [],
   templateUrl: './soma.component.html',
-  styleUrls: ['./soma.component.css'] // Corrigi de `styleUrl` para `styleUrls`
+
+  styleUrls: ['./soma.component.css'] 
 })
 export class SomaComponent {
 
@@ -23,5 +29,23 @@ export class SomaComponent {
 
   get resultado(): string {
     return this.res.toString(); // Corrigido: era vírgula (,) errado, agora é ponto (.) para chamar função
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   }
 }
