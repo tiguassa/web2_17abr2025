@@ -1,16 +1,17 @@
 import { Component } from '@angular/core';
-import { SomaService } from '../../services'; 
+import { SomaService } from '../../services';
+import { NumberSymbol } from '@angular/common';
 
 @Component({
   selector: 'app-soma',
   standalone: true,
   imports: [],
   templateUrl: './soma.component.html',
-  styleUrls: ['./soma.component.css'] 
+  styleUrls: ['./soma.component.css']
 })
 export class SomaComponent {
-
   private res: number = 0;
+
   constructor(private somaService: SomaService) {}
 
   somarBotao(numero1: string, numero2: string): void {
@@ -21,6 +22,5 @@ export class SomaComponent {
 
   get resultado(): string {
     return this.res.toString();
-
   }
 }
